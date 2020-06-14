@@ -14,4 +14,8 @@ pub fn try_it_out() {
     let unsigned_num_5: u128 = 23;
     // constants cannot be reassigned
     const SOME_SETTING: u8 = 5;
+
+    // varibales can be initialized after binding phase
+    let binding;
+    binding = 12345;
 }
