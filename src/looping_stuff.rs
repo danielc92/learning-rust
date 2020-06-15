@@ -9,3 +9,15 @@ pub fn try_out_loops() {
         }
     }
 }
+
+pub fn try_out_while() {
+    let mut flag: bool = true;
+    let mut c = 0;
+    while flag {
+        println!("{}", c);
+        c += 2;
+        if c == 150 {
+            flag = false;
+        }
+    }
+}
