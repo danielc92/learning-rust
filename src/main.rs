@@ -8,5 +8,5 @@ mod variable_stuff;
 
 fn main() {
     // array_stuff::try_it_out();
-    looping_stuff::try_out_while();
+    looping_stuff::loop_array_with_an_index();
 }
