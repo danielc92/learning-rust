@@ -1,4 +1,13 @@
-pub fn run(sample: &[usize; 10], target: usize) -> usize {
+pub fn linear_search(sample: &[usize; 10], target: &usize) -> Option<String> {
+    for (index, element) in sample.iter().enumerate() {
+        if element == target {
+            return Some(format!("We found {} at index {}.", target, index));
+        }
+    }
+    return None;
+}
+
+pub fn binary_search(sample: &[usize; 10], target: usize) -> usize {
     let mut lower: f32 = 0.0;
     let mut upper: f32 = sample.len() as f32 - 1.0;
     let denominator: f32 = 2.0;
