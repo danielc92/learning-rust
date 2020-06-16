@@ -15,3 +15,10 @@ pub fn validate_number(number: &i32) -> Option<String> {
         None
     }
 }
+
+// Usage
+// let result = some_stuff::validate_number(&32);
+// match result {
+//     None => println!("Failed"),
+//     Some(x) => println!("{}", x),
+// }
