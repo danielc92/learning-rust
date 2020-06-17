@@ -10,3 +10,5 @@ edition = "2018"
 rand = "0.6"
 jsonwebtoken = "7"
 serde = {version = "1.0", features = ["derive"] }
+reqwest = { version = "0.10", features = ["blocking", "json"] }
+tokio = { version = "0.2", features = ["full"] }
