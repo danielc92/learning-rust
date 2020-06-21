@@ -16,6 +16,13 @@ pub fn validate_number(number: &i32) -> Option<String> {
     }
 }
 
+pub fn add_to_option(x: Option<i32>) -> Option<i32> {
+    match x {
+        Some(x) => Some(x + 10),
+        None => None,
+    }
+}
+
 // Usage
 // let result = some_stuff::validate_number(&32);
 // match result {
