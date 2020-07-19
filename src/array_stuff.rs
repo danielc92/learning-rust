@@ -1,19 +1,19 @@
 pub fn try_it_out() {
-    let num_array = [2, 3, 4];
-    let num_tuple = (3, 5, 4);
+    let _num_array = [2, 3, 4];
+    let _num_tuple = (3, 5, 4);
     // Fixed size array declaration
-    let fixed_array: [i32; 3] = [1, 2, 1];
+    let _fixed_array: [i32; 3] = [1, 2, 1];
     // Return array length
-    println!("{}", num_array.len());
+    println!("{}", _num_array.len());
     let mut mutable_array: [i8; 4] = [1, 2, 2, 3];
     mutable_array[3] = 1;
     println!("{:?}", mutable_array);
 
     // Return value at index
-    println!("{}", num_array[1]);
+    println!("{}", _num_array[1]);
     // Check if number is in array
     let num = 3;
-    let result = num_array.contains(&num);
+    let result = _num_array.contains(&num);
     println!("{}", result);
 
     // Vectors can vary in length, unlike arrays
@@ -45,5 +45,5 @@ pub fn try_it_out() {
 
     println!("{:?}", lamp);
 
-    let desk_items: Vec<DeskItem> = vec![pencil, lamp];
+    let _desk_items: Vec<DeskItem> = vec![pencil, lamp];
 }

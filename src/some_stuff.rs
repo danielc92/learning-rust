@@ -29,3 +29,11 @@ pub fn add_to_option(x: Option<i32>) -> Option<i32> {
 //     None => println!("Failed"),
 //     Some(x) => println!("{}", x),
 // }
+
+fn return_enrolled(name: &str) -> Option<&str> {
+    match name {
+        "Daniel" => Some("Daniel is enrolled"),
+        "Jeffrey" => Some("Coolio"),
+        _ => None,
+    }
+}
